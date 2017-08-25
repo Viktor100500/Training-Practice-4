@@ -28,7 +28,7 @@ namespace Training_Practice__4
                 {
                     Console.Write("Введите число E(погрешность): ");
                     ok = Double.TryParse(Console.ReadLine(), out E);
-                    if (!ok || E <= 0) { Console.WriteLine("Введите действительное положительное число!"); }
+                    if (!ok || E <= 0) { Console.WriteLine("Введите действительное положительное число!"); ok = false; }
                 }
                 while (!ok);
                 double x, y, Fx, Fy, Echeck = 3;
